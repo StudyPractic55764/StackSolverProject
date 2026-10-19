@@ -1,5 +1,6 @@
 import { usuarios } from './datos.js';
 
+
 document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.getElementById('loginForm');
     const mensajeDiv = document.getElementById('mensaje');

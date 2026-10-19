@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StackSolvers</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous"
+    >
     <link href="styleindex.css" rel="stylesheet">
 </head>
 <body>
@@ -11,11 +17,11 @@
     <!--Barra superior de navegación-->
     <nav class="barraSuperior">
         <div class="logo">StackSolvers</div>
-        <a class="nav-link" href="dashboard.html">Dashboard</a>
+        <a class="nav-link" href="index.html">Dashboard</a>
         <a class="nav-link" href="login.html">Login</a>
         <a class="nav-link" href="intercambios.html">Intercambios</a>
         <a class="nav-link" href="alta_usuario.html">Alta Usuario</a>
-        <div class="no-login">No login</span>
+        <div class="no-login" href="login.js">(No login)</div>
     </nav>
 
     <!--Zona para el contenido principal-->
@@ -30,14 +36,42 @@
 
         <!--Contenedor para las tarjetas de ofertas y demanda-->
         <div class="cards-grid">
+            
+                <article class="tarjeta tarjeta-azul">
+                    <div class="tarjeta-contenido">
+                        <h3>Ofrezco inglés nativo, busco practicar catalán</h3>
+                        <p class="tarjeta-fecha">2025-02-10</p>
+                        <p class="tarjeta-descripcion">Hablante nativo de inglés se ofrece para practicar conversación los martes por la tarde</p>
+                    
+                    </div>
+                    <div class="tarjeta-footer">Publicado por: SER</div>
+                </article>
 
-            <!--En esta parte deberán reflejarse las tarjetas que vayamos creando las principales interacciones-->
-            <div class="tarjetas-oferta"></div>
+                <article class="tarjeta tarjeta-azul">
+                <div class="tarjeta-contenido">
+                    <h3>Ofrezco inglés nativo, busco practicar catalán</h3>
+                    <p class="tarjeta-fecha">2025-02-10</p>
+                    <p class="tarjeta-descripcion">
+                        Hablante nativo de inglés se ofrece para practicar conversación los martes por la tarde
+                    </p>
+                </div>
+                <div class="tarjeta-footer">Publicado por: GEM</div>
+            </article>
 
-            <div class="tarjetas-demanda"></div>
+            <article class="tarjeta tarjeta-verde">
+                <div class="tarjeta-contenido">
+                    <h3>Busco compañero/a para practicar alemán</h3>
+                    <p class="tarjeta-fecha">2025-02-10</p>
+                    <p class="tarjeta-descripcion">
+                        Estudiante de alemán busca persona nativa o con buen nivel para practicar conversación semanalmente.
+                    </p>
+                </div>
+                <div class="tarjeta-footer">Publicado por: GEM</div>
+            </article>
+            
         </div>
 
-
+    
     </main>
 </body>
 </html>
