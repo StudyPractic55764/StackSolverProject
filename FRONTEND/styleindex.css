@@ -1,0 +1,46 @@
+.barraSuperior {
+    background-color: #bebcbc;
+    padding: 5px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+}
+
+.logo {
+    align-content: center;
+    padding-right: 20px;
+    font-style: italic;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin-right: 10px;
+    
+}
+
+.contenedorPrincipal {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botonFiltrar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.filtrar {
+    background-color: #425dd7;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.no-login {
+    align-content: center;
+    font-style: italic;
+    
+}
