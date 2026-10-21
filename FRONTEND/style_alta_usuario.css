@@ -16,3 +16,15 @@
     font-size: 1em;
     color: #333;
 }
+
+.tarjeta-usuario {
+    transition: background-color 0.2s ease;
+}
+
+.tarjeta-usuario:hover {
+    background-color: #f8f9fa;
+}
+
+.btn-baja {
+    white-space: nowrap;
+}
