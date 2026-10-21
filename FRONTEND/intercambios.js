@@ -1,4 +1,5 @@
 import { intercambios } from "./datos.js";
+import { usuarios } from './datos.js';
 
 const listado = document.querySelector("#listado-intercambios");
 
