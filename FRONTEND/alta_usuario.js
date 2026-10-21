@@ -61,42 +61,42 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     });
-});
    
 
-//FUNCIONES PARA AÑADIR NUEVOS USUARIOS
+    //FUNCIONES PARA AÑADIR NUEVOS USUARIOS
 
-if(formulario) {
-    formulario.addEventListener("submit", function(evento) {
-        evento.preventDefault();
+    if(formulario) {
+        formulario.addEventListener("submit", function(evento) {
+            evento.preventDefault();
 
-        const nombre = document.getElementById("nombre").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const password = document.getElementById("password").value;
+            const nombre = document.getElementById("nombre").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value;
 
-        const emailExiste = usuarios.some(u => u.email.toLowerCase() === email.toLowerCase());
+            const emailExiste = usuarios.some(u => u.email.toLowerCase() === email.toLowerCase());
 
-        if (emailExiste) {
-            alert("ERROR: Ya existe un usuario con ese email");
-            return;
-        }
+            if (emailExiste) {
+                alert("ERROR: Ya existe un usuario con ese email");
+                return;
+            }
 
-        const nuevoID = usuarios.length > 0 ? Math.max(...usuarios.map(u => u.id)) + 1 : 1;
+            const nuevoID = usuarios.length > 0 ? Math.max(...usuarios.map(u => u.id)) + 1 : 1;
 
-        const nuevoUsuario = {
-            id: nuevoID,
-            nombre: nombre,
-            email: email,
-            password: password
-        };
+            const nuevoUsuario = {
+                id: nuevoID,
+                nombre: nombre,
+                email: email,
+                password: password
+            };
 
-        usuarios.push(nuevoUsuario);
+            usuarios.push(nuevoUsuario);
 
-        printarUsuarios(usuarios);
-        formulario.reset();
+            printarUsuarios(usuarios);
+            formulario.reset();
 
-        alert("Usuario ${nombre} registrado con éxito!");
-    });
-} else {
-    console.error("No se encontró el formulario con id 'form-usuario'");   
-};
+            alert(`Usuario ${nombre} registrado con éxito!`);
+        });
+    } else {
+        console.error("No se encontró el formulario con id 'form-usuario'");   
+    };
+});
